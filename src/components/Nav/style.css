@@ -1,0 +1,35 @@
+.bar {
+    background-color: white;
+    box-shadow: inset 0px 5px 10px rgba(0,0,0,0.4);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.logo {
+    grid-column: 1 /2;
+    padding: 10%;
+}
+.center-bar {
+    grid-column: 2 / 6;
+}
+.search-bar {
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+}
+.search-field {
+    width: 70%;
+    height: 25px;
+}
+.search-button {
+    height: 31px;
+}
+.catalog {
+    padding: 25px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.shopper {
+    text-align: center;
+    grid-column: 6 / 7;
+    width: 100px;
+    padding: 10%;
+}

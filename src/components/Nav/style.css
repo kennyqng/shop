@@ -21,6 +21,8 @@
 }
 .search-button {
     height: 31px;
+    background-color: #7CEFDA;
+    color: white;
 }
 .catalog {
     padding: 25px 0px 0px 0px;
@@ -32,4 +34,9 @@
     grid-column: 6 / 7;
     width: 100px;
     padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cart {
+    padding:  0% 0% 0% 50%;
 }

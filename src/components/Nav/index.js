@@ -22,7 +22,8 @@ function Nav() {
           </div>
         </div>
         <div className="shopper">
-          <h5 className="login">Sign Up|Log In</h5>
+          <h6 className="signup">Sign Up</h6>
+          <h6 className="login">Log In</h6>
           <img className="cart" src={cart}></img>
         </div>
       </div>

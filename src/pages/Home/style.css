@@ -1,5 +1,18 @@
 .banner {
-    display: flex;
-    width: 100%;
-    height: auto;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.products {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr;
+    margin-bottom: 10%;
+}
+
+@media (min-width: 769px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

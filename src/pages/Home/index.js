@@ -1,14 +1,65 @@
 import React from "react";
-import banner from "../../assets/banner.svg";
 import "./style.css";
-
+import banner from "../../assets/banner.svg";
+import Card from "../../components/Card";
+import bowl from "../../assets/bowl.svg";
+import fries from "../../assets/fries.svg";
+import frisbie from "../../assets/frisbie.svg";
 
 function Home() {
-    return (
-        <>
-        <img src={banner} className="banner" alt="puppy banner"></img>
-        <div className="products"></div>
-        </>
-    );
+  const dummy = [
+    {
+      id: 1,
+      thumbnail: bowl,
+      title: "Customizable Bowl",
+      price: 19.99
+    },
+    {
+      id: 2,
+      thumbnail: fries,
+      title: "Fries Baseball Shirt",
+      price: 14.99
+    },
+    {
+      id: 3,
+      thumbnail: frisbie,
+      title: "Customizable Frisbie",
+      price: 9.99
+    },
+    {
+      id: 4,
+      thumbnail: bowl,
+      title: "Customizable Bowl",
+      price: 19.99
+    },
+    {
+      id: 5,
+      thumbnail: fries,
+      title: "Fries Baseball Shirt",
+      price: 14.99
+    },
+    {
+      id: 6,
+      thumbnail: frisbie,
+      title: "Customizable Frisbie",
+      price: 9.99
+    }
+  ];
+  return (
+    <>
+      <img src={banner} className="banner" alt="puppy banner"></img>
+      <h1 style={{ padding: "0% 0% 0% 3%" }}>New arrivals!</h1>
+      <div className="products">
+        {dummy.map(dummy => (
+          <Card
+            key={dummy.id}
+            thumbnail={dummy.thumbnail}
+            title={dummy.title}
+            price={dummy.price}
+          />
+        ))}
+      </div>
+    </>
+  );
 }
 export default Home;

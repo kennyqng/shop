@@ -7,12 +7,13 @@
     display: grid;
     grid-gap: 2%;
     grid-template-columns: 1fr;
-    margin-bottom: 10%;
+    margin-bottom: 300px;
 }
 
 @media (min-width: 769px) {
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10%;
   }
 }
